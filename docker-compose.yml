@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  java-cal:
+    build: ./java-calculator
+    ports:
+      - "8000:8000"
+    networks:
+      - calculator_network
+
+  pycal:
+    build: ./python-calculator
+    ports:
+      - "9000:9000"
+    networks:
+      - calculator_network
+
+networks:
+  calculator_network:
+    driver: bridge
