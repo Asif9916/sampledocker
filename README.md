@@ -1,7 +1,12 @@
 Hey buddy ! 
 
-I have created a calculator application that uses Java and Python in a separate docker container, and they communicate with each other on a network. 
+I have created a calculator application that uses Java and Python in a separate docker container, and they are hosted over a common docker network. 
 I have used postman for inputs to the calculator.
+
+
+#Download Docker Desktop.
+run command docker compose up -d
+
 
 ex:
 
